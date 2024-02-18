@@ -1,0 +1,34 @@
+:root {
+  // Colors
+  --bg: #010409;
+  --yellow: #fcb32c;
+  --white: #f0f6fc;
+  --slate: #8892b0;
+  --lightest-slate: #ccd6f6;
+
+  // Fonts
+  --ff-primary: 'Calibre', sans-serif;
+  --ff-mono: 'SF Mono', sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+
+  --fs-xxs: 12px;
+  --fs-xs: 13px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 20px;
+  --fs-xxl: 22px;
+  --fs-heading: 32px;
+
+  // Borders
+  --border-radius-btn: 4px;
+  --border-radius: 20px;
+
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}

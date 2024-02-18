@@ -1,0 +1,36 @@
+// Refer - https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+// Extra small devices (less than 576px)
+@mixin for-x-small-dev {
+  @media (max-width: 575.98px) {
+    @content;
+  }
+}
+
+// Small and extra small devices (all phones, less than 768px)
+@mixin till-small-dev {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+
+// Medium, small and extra small devices (tablets and phones, less than 992px)
+@mixin till-med-dev {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
+
+// Only tablets
+@mixin for-med-dev {
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    @content;
+  }
+}
+
+//Large devices (desktops, less than 1200px)
+@mixin for-large-dev {
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    @content;
+  }
+}

@@ -1,0 +1,83 @@
+@import '../../styles/responsive';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: var(--bg);
+  @include till-med-dev {
+    padding: 30px 25px;
+  }
+}
+
+.logo {
+  border-width: 3px;
+  font-weight: 600;
+  &::after {
+    content: '_';
+    animation: blink 1s steps(2) infinite;
+  }
+}
+
+@keyframes blink {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.ham_btn {
+  display: none;
+  border: none;
+  z-index: 10;
+  //position: relative;
+  background: transparent;
+  @include till-med-dev {
+    display: block;
+  }
+}
+
+.ham_box {
+  position: relative;
+  height: 25px;
+  width: 30px;
+}
+
+.ham_box_inner {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 30px;
+  height: 2px;
+  background-color: var(--yellow);
+  border-radius: 4px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 120%;
+    height: 2px;
+    background: var(--yellow);
+    border-radius: 4px;
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    right: 0px;
+    width: 80%;
+    height: 2px;
+    background: var(--yellow);
+    border-radius: 4px;
+  }
+}

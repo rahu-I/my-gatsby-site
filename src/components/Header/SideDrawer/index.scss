@@ -1,0 +1,22 @@
+.drawer {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  padding: 50px 10px;
+  width: min(70vw, 400px);
+  height: 100vh;
+  background: hsl(0 0% 100% / 0.1);
+  z-index: 9;
+  transition: var(--transition);
+
+  &_visible {
+    transform: translateX(0vw);
+    visibility: visible;
+  }
+
+  &_hidden {
+    transform: translateX(100vw);
+    visibility: hidden;
+  }
+}
