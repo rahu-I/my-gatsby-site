@@ -58,6 +58,35 @@ main {
   }
 }
 
+@each $name, $value in variables.$theme-colors {
+  .text-#{$name} {
+    color: $value;
+  }
+  .text-hover-#{$name} {
+    &:hover {
+      color: $value;
+    }
+  }
+}
+
+@each $name, $value in variables.$font-family {
+  .ff-#{$name} {
+    font-family: $value;
+  }
+}
+
+@each $name, $value in variables.$font-weights {
+  .fw-#{$name} {
+    font-weight: $value;
+  }
+}
+
+@each $name, $value in variables.$font-sizes {
+  .fs-#{$name} {
+    font-size: $value;
+  }
+}
+
 h1,
 h2,
 h3,

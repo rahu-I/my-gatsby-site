@@ -19,12 +19,7 @@
 
   --fs-xxs: 12px;
   --fs-xs: 13px;
-  --fs-sm: 14px;
-  --fs-md: 16px;
-  --fs-lg: 18px;
   --fs-xl: 20px;
-  --fs-xxl: 22px;
-  --fs-heading: 32px;
 
   // Borders
   --border-radius-btn: 4px;
@@ -32,3 +27,34 @@
 
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+
+$theme-colors: (
+  yellow: #fcb32c,
+  white: #f0f6fc,
+  slate: #8892b0,
+  lightest-slate: #ccd6f6,
+);
+
+$font-family: (
+  primary: var(--ff-primary),
+  mono: var(--ff-mono),
+);
+
+$font-weights: (
+  regular: var(--fw-regular),
+  medium: var(--fw-medium),
+  semi-bold: var(--fw-semi-bold),
+);
+
+$font-sizes: (
+  12: 12px,
+  13: 13px,
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  22: 22px,
+  24: 24px,
+  32: 32px,
+  40: 40px,
+);

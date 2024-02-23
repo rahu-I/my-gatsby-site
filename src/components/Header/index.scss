@@ -19,7 +19,7 @@
   font-weight: 600;
   &::after {
     content: '_';
-    animation: blink 1s steps(2) infinite;
+    animation: blink 3s steps(2) infinite;
   }
 }
 
@@ -33,6 +33,7 @@
 }
 
 .ham_btn {
+  cursor: pointer;
   display: none;
   border: none;
   z-index: 10;
@@ -57,18 +58,32 @@
   height: 2px;
   background-color: var(--yellow);
   border-radius: 4px;
+  transition: var(--transition);
+  &--open {
+    background-color: #333;
+  }
 
   &::before {
     content: '';
     display: block;
     position: absolute;
-    top: -10px;
-    right: 0px;
-    width: 120%;
     height: 2px;
     background: var(--yellow);
     border-radius: 4px;
+    top: -10px;
+    right: 0px;
+    width: 120%;
+    transition: var(--transition);
   }
+
+  &--open {
+    &::before {
+      rotate: 45deg;
+      width: 100%;
+      top: 0px;
+    }
+  }
+
   &::after {
     content: '';
     display: block;
@@ -79,5 +94,14 @@
     height: 2px;
     background: var(--yellow);
     border-radius: 4px;
+    transition: var(--transition);
+  }
+
+  &--open {
+    &::after {
+      rotate: -45deg;
+      width: 100%;
+      bottom: 0px;
+    }
   }
 }
