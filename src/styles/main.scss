@@ -46,15 +46,14 @@ main {
   width: 100%;
   @include till-small-dev {
     padding: 0px 25px;
-    margin-top: 130px;
+    margin-top: 200px;
   }
   @include for-med-dev {
     padding: 0px 100px;
-    margin-top: 150px;
   }
   @include for-large-dev {
     padding: 0px 150px;
-    margin-top: 150px;
+    // margin-top: 150px;
   }
 }
 

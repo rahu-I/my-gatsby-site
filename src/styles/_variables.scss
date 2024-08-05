@@ -2,6 +2,7 @@
   // Colors
   --bg: #010409;
   --yellow: #fcb32c;
+  --light-yellow: #fcb32c33;
   --white: #f0f6fc;
   --slate: #8892b0;
   --lightest-slate: #ccd6f6;
@@ -26,6 +27,8 @@
   --border-radius: 20px;
 
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  --work-exp-tab-height: 42px;
 }
 
 $theme-colors: (
